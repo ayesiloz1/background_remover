@@ -1,1 +1,1 @@
-web: gunicorn background_remover.wsgi --log-file -
+web: gunicorn background_remover.wsgi --workers 2 --timeout 60 --log-file -
