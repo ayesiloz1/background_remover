@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.br-env/  # Or your specific virtual environment folder name
+.br-env/
+
+# Django specific stuff
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3  # Ignore local SQLite databases (since you're using PostgreSQL on Render)
+
+# Media files (optional, depending on if you track them in the repo)
+media/
+
+# Static files
+staticfiles/
+
+# Local environment variables
+.env
+.env.*
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+
+# Django migrations (optional, only if you don’t want to track migration files)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# VSCode settings folder (if you're using VSCode)
+.vscode/
+
+# macOS specific files
+.DS_Store
+
+# Backup files
+*.swp
+*~
