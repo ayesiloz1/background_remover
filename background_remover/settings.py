@@ -3,7 +3,7 @@ from pathlib import Path
 import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'your-secret-key'  # Change this in production
+SECRET_KEY = 'your-secret-key'  
 DEBUG = True
 ALLOWED_HOSTS = ['backdropfree.onrender.com', 'localhost', '127.0.0.1']
 
@@ -14,7 +14,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'remover',  # Add your app here
+    'remover',  
 ]
 
 MIDDLEWARE = [
@@ -74,8 +74,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-
-# Media files (uploads)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
